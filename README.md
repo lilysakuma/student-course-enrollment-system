@@ -27,7 +27,7 @@ Requires the .NET 10 SDK.
 From the repository root, run:
 
 ```bash
-dotnet run --project CanvasConsole/CanvasConsole.csproj
+dotnet run --project CanvasConsole.csproj
 ```
 
 ## Running Tests

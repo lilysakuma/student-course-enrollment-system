@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CanvasConsole\CanvasConsole.csproj" />
-  </ItemGroup>
+    <ProjectReference Include="..\CanvasConsole.csproj" />  </ItemGroup>
 
 </Project>
