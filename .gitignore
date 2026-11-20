@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+**/enrollment.json
+.DS_Store
+.vs/
+.vscode/
