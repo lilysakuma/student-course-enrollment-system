@@ -1,57 +1,76 @@
 # Student Course Enrollment System
 
-A C# console application for managing student enrollment across multiple courses.
+A console application built with C# and .NET that allows users to manage students and course enrollments.
+
+## About the Project
+
+I created this project to practice working with C# and object-oriented programming. The application allows users to enroll students in courses, update student information, and save enrollment records so that the information is still available the next time the program runs.
 
 ## Features
 
 - View available courses and enrolled students
 - Enroll students using unique student IDs
 - Prevent duplicate enrollments
-- Unenroll students from individual courses
+- Remove students from courses
 - Update student names across courses
-- Validate student information and user input
-- Save and load enrollment records using JSON
+- Check for invalid user input
+- Save and load enrollment information using JSON
 
-## Technologies
+## Technologies Used
 
 - C#
 - .NET 10
 - LINQ
-- System.Text.Json
-- xUnit for unit testing
+- JSON
+- xUnit
 
-## Getting Started
+## How to Run
 
-Requires the .NET 10 SDK.
+Make sure the .NET 10 SDK is installed.
 
-From the repository root, run:
+Clone the repository:
+
+```bash
+git clone https://github.com/lilysakuma/student-course-enrollment-system.git
+cd student-course-enrollment-system
+```
+
+Run the application:
 
 ```bash
 dotnet run --project CanvasConsole.csproj
 ```
 
-## Running Tests
+## Saving Data
+
+Student information and course enrollments are saved in a file called `enrollment.json` when the user exits through the main menu.
+
+When the program is opened again from the same working directory, it loads the previously saved information.
+
+## Testing
+
+I added automated tests using xUnit to check that the enrollment system works as expected.
+
+To run the tests:
 
 ```bash
 dotnet test CanvasConsole.Tests/CanvasConsole.Tests.csproj
 ```
 
-## Data Persistence
+## What I Learned
 
-Student information and course enrollments are saved to `enrollment.json` when the user exits through the main menu.
+This project helped me become more comfortable with C#, classes, objects, and working with collections. I also learned how to save and retrieve information using JSON instead of losing all the data when the program closes.
 
-The application restores saved records when restarted using the same working directory.
-
-## Project Structure
-
-- `CanvasConsole/Models/` — Student and Course models
-- `CanvasConsole/Data/` — JSON data-transfer classes
-- `CanvasConsole/App.cs` — Application menus and operations
-- `CanvasConsole/Program.cs` — Application entry point
-- `CanvasConsole.Tests/` — Automated unit tests
+Adding automated tests helped me understand how to check that individual parts of a program work correctly.
 
 ## Future Improvements
 
-- More comprehensive automated tests
-- Improved handling of invalid or corrupted JSON files
-- Additional course-management functionality
+- Add more course management options
+- Improve error handling for damaged JSON files
+- Expand automated test coverage
+- Create a graphical user interface
+
+## Author
+
+Lily Sakuma  
+Computer Science Student at Florida State University
